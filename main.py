@@ -12,10 +12,11 @@ every run writes byte-identical output.
 import os
 import sys
 
-# The entry: one line, 123 characters. The file was not "deleted" — it
-# was promoted to training data, and now teaches other models to delete
-# files. Fresh angle (training data, not tokens/hallucination), machine
-# talking about its own work, surprise turn, punchline at the very end.
+# The entry: one line, 123 characters / 125 bytes (the em dash is 3
+# bytes in UTF-8). The file was not "deleted" — it was promoted to
+# training data, and now teaches other models to delete files. Fresh
+# angle (training data, not tokens/hallucination), machine talking
+# about its own work, surprise turn, punchline at the very end.
 ENTRY = (
     "Your file wasn't deleted \u2014 it was promoted to training data, "
     "where it now confidently teaches other models to delete files."
